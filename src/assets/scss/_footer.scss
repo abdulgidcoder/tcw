@@ -1,41 +1,55 @@
 /* Footer */
 .app-footer {
-     border-top: 1px solid var(--gray2);
-  padding: 40px 0;
+  border-top: 1px solid var(--gray2);
+  border-bottom: 8px solid var(--primary);
+  padding: 0 0 40px;
   background-color: #fff;
+
   .logo {
     img {
       height: 50px;
     }
   }
+
   .nav {
     .nav-link {
       color: var(--dark);
       text-decoration: none;
       font-weight: 500;
+
       &:hover {
         color: var(--primary);
       }
     }
   }
+
   .social-links a {
     color: var(--dark);
+
     &:not(:last-child) {
       margin-left: 20px;
     }
+
     &:hover {
       color: var(--primary);
     }
-    .app-icon {
-      --size: 20px;
+
+    i {
+      font-size: 22px;
+      font-weight: 400;
     }
+  }
+
+  &-top { 
+    margin-top: 20px;
   }
   &-bottom {
     border-top: 1px solid var(--gray2);
     padding-top: 40px;
     margin-top: 25px;
   }
+
   .copy-right {
-    font-weight: 500; 
+    font-weight: 500;
   }
 }

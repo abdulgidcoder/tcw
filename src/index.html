@@ -1,15 +1,17 @@
-@@include('partials/layouts/header.html', { "title": "%VITE_APP_NAME%" } );
+@@include('partials/layouts/header.html', { "title": "%VITE_APP_NAME%" } )
 <main class="app-main">
+
   <!-- Hero Section -->
-  @@include('partials/sections/hero-home.html');
+  @@include('partials/sections/hero-home.html')
 
   <!-- banner -->
-  @@include('partials/sections/banner-slideshow.html');
+  @@include('partials/sections/banner-slideshow.html')
 
-  <!-- Featured Projects -->
-  @@include('partials/sections/featured-projects.html');
+  <!-- Featured courses -->
+  @@include('partials/sections/featured-courses.html')
 
   <!-- Partners Section -->
-  @@include('partials/sections/partners.html', {"title": "الشركات المميزة", "clasess": "bg-white"});
+  @@include('partials/sections/partners.html', { "classes": "bg-white", "showBanner": false, "title": "شركاء النجاح"})
+
 </main>
-@@include('partials/layouts/footer.html');
+@@include('partials/layouts/footer.html')

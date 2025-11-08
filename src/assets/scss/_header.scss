@@ -8,14 +8,18 @@
   background-color: #fff;
   box-shadow: 0 0 10px 0px #8c8c8c61;
   border-top: 8px solid var(--primary);
+
   .navbar {
     padding: 10px 0;
+
     &-brand {
       margin-left: 35px;
+
       img {
         height: 60px;
       }
     }
+
     .navbar-toggler {
       padding: 0;
       border: none;
@@ -24,52 +28,59 @@
       outline: none;
       box-shadow: none;
     }
+
     .nav-item {
       &:not(:last-child) {
         margin-left: 15px;
       }
     }
+
     .nav-link {
       font-size: 1rem;
       font-weight: 500;
       color: var(--black);
+
       &:hover {
         color: var(--primary);
       }
     }
-    .logo-other{
-      img{
+
+    .logo-other {
+      img {
         width: 60px;
         height: 60px;
         object-fit: cover;
       }
     }
-    .login-link{
+
+    .login-link {
       margin-inline-start: 20px;
       font-weight: 600;
-      font-size: 1.125rem;
-      --size: 1.125rem;
+      font-size: 1.125rem; 
     }
+
     @media (max-width: 991px) {
       .nav-item {
         margin-left: 0 !important;
-        &:last-child{
-           .nav-link { 
-        border-bottom: 1px solid var(--gray2);
-      }
+
+        &:last-child {
+          .nav-link {
+            border-bottom: 1px solid var(--gray2);
+          }
         }
       }
+
       .nav-link {
         padding: 14px 0;
         border-top: 1px solid var(--gray2);
       }
+
       .navbar-collapse {
         text-align: center;
       }
+
       .navbar-nav {
         padding: 20px 0;
-       
-
       }
     }
   }

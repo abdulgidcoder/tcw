@@ -1,0 +1,75 @@
+<section class="featured-courses bg-light">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <div class="section-title text-start">
+        <h2>احدث الدورات</h2>
+        <p>بعض الدورات المميزة التي اخترناها</p>
+      </div>
+      <div>
+        <a href="./courses.html" class="btn btn-sm btn-outline-primary">عرض الكل<i
+            class="hgi-stroke hgi-angle-left ms-2"></i></a>
+      </div>
+    </div>
+    <div class="courses-cates-carousel">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="course-cate">
+              <div class="course-cate_icon">
+                <i class="hgi hgi-stroke hgi-star-off"></i>
+              </div>
+              <div class="course-cate_content">
+                <h4>التسويق</h4>
+                <span>5 دورات</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="course-cate">
+              <div class="course-cate_icon">
+                <i class="hgi hgi-stroke hgi-star-off"></i>
+              </div>
+              <div class="course-cate_content">
+                <h4>التسويق</h4>
+                <span>5 دورات</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="course-cate">
+              <div class="course-cate_icon">
+                <i class="hgi hgi-stroke hgi-star-off"></i>
+              </div>
+              <div class="course-cate_content">
+                <h4>التسويق</h4>
+                <span>5 دورات</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="course-cate">
+              <div class="course-cate_icon">
+                <i class="hgi hgi-stroke hgi-star-off"></i>
+              </div>
+              <div class="course-cate_content">
+                <h4>التسويق</h4>
+                <span>5 دورات</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="courses-carousel">
+      <div class="app-swiper-container">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            @@loop('../layouts/course-slide.html', '../../data/data.json')
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </div>
+</section>

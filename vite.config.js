@@ -2,9 +2,10 @@ import { defineConfig } from "vite";
 import fileIncludePlugin from "vite-file-include";
 import { fileURLToPath } from "url";
 import fs from "fs";
-import path from "path"; 
-// Get the directory name of the current module
+import path from "path";
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
 export default defineConfig({
   base: "./",
   root: "src",
@@ -20,21 +21,7 @@ export default defineConfig({
       },
       input: {
         main: path.resolve(__dirname, "src/index.html"),
-        main2: path.resolve(__dirname, "src/index2.html"),
-        about: path.resolve(__dirname, "src/about.html"),
-        contact: path.resolve(__dirname, "src/contact.html"),
-        company: path.resolve(__dirname, "src/company.html"),
-        inquiries: path.resolve(__dirname, "src/inquiries.html"),
-        privacy: path.resolve(__dirname, "src/privacy-policy.html"),
-        project: path.resolve(__dirname, "src/single-project.html"),
-        projects: path.resolve(__dirname, "src/projects.html"),
-        terms: path.resolve(__dirname, "src/terms-conditions.html"),
-        pricing: path.resolve(__dirname, "src/pricing.html"),
-        updates: path.resolve(__dirname, "src/project-updates.html"),
-        login: path.resolve(__dirname, "src/login.html"),
-        register: path.resolve(__dirname, "src/register.html"),
-        error: path.resolve(__dirname, "src/404.html"),
-        sitemap: path.resolve(__dirname, "src/sitemap.html"),
+        // ... all other entries
       },
     },
   },
@@ -43,12 +30,47 @@ export default defineConfig({
       "@": path.resolve(__dirname, "src"),
     },
   },
-  server: {   
-    hmr: false,
+  server: {},
+  css: {
+    preprocessorOptions: {
+      scss: {
+        // This ensures all SCSS files get variables globally
+        additionalData: `@use "@/assets/scss/variables.scss" as *;`
+      },
+    },
   },
   plugins: [
     fileIncludePlugin({
-      baseDir: "src", 
+      baseDir: "./src",
+      context: {
+        title: 'معهد التميز الكندي - TCW'
+      },
+      customFunctions: {
+        uppercase: (str) => str.toUpperCase(),
+        currentYear: () => new Date().getFullYear(),
+        loadSvg: function (svgFile, classes = "") {
+          try {
+            const cleanPath = svgFile.startsWith("/") ? svgFile.slice(1) : svgFile;
+            const svgPath = path.join(__dirname, "src", "assets/images/icons", cleanPath);
+
+            if (!fs.existsSync(svgPath)) {
+              console.error(`SVG file not found at path: ${svgPath}`);
+              return "";
+            }
+
+            const svgContent = fs
+              .readFileSync(svgPath, "utf-8")
+              .replace(/<\?xml.*?\?>/g, "")
+              .replace(/<!--[\s\S]*?-->/g, "")
+              .trim();
+
+            return `<span class='app-icon ${classes}'>${svgContent}</span>`;
+          } catch (error) {
+            console.error(`Error loading SVG file ${svgFile}:`, error);
+            return "";
+          }
+        },
+      },
     }),
-  ], 
+  ],
 });

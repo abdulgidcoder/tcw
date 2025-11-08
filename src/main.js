@@ -7,14 +7,15 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import 'swiper/css/effect-fade';
+import 'bootstrap/dist/css/bootstrap.rtl.min.css';
 import "@/assets/scss/app.scss";
 
-document.addEventListener("DOMContentLoaded", function () {
-  setTimeout(() => {
-    document.getElementById("app-loader").style.display = "none";
-  }, 800);
 
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//   setTimeout(() => {
+//     document.getElementById("app-loader").style.display = "none";
+//   }, 800); 
+// });
 // init Swiper:
 const slideshow = new Swiper(".slideshow-section .swiper", {
   slidesPerView: 1,
@@ -32,7 +33,7 @@ const slideshow = new Swiper(".slideshow-section .swiper", {
   },
   modules: [Navigation, Autoplay, EffectFade],
 });
-const projects = new Swiper(".featured-projects .swiper", {
+const courses = new Swiper(".courses-cates-carousel .swiper", {
   slidesPerView: 1,
   spaceBetween: 25,
   breakpoints: {
@@ -47,15 +48,34 @@ const projects = new Swiper(".featured-projects .swiper", {
     },
   },
   navigation: {
-    nextEl: ".featured-projects .swiper-button-next",
-    prevEl: ".featured-projects .swiper-button-prev",
+    nextEl: ".featured-courses .swiper-button-next",
+    prevEl: ".featured-courses .swiper-button-prev",
+  },
+  modules: [Navigation],
+});
+const coursesCates = new Swiper(".courses-carousel .swiper", {
+  slidesPerView: 1,
+  spaceBetween: 25,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1400: {
+      slidesPerView: 4,
+    },
+  },
+  navigation: {
+    nextEl: ".featured-courses .swiper-button-next",
+    prevEl: ".featured-courses .swiper-button-prev",
   },
   modules: [Navigation],
 });
 
 const partners = new Swiper(".partners-section .swiper", {
-  slidesPerView: 2,
-  spaceBetween: 30,
+  slidesPerView: 2, 
   breakpoints: {
     768: {
       slidesPerView: 3,
@@ -64,8 +84,7 @@ const partners = new Swiper(".partners-section .swiper", {
       slidesPerView: 4,
     },
     992: {
-      slidesPerView: 5,
-      spaceBetween: 40,
+      slidesPerView: 5, 
     },
     1400: {
       slidesPerView: 6,

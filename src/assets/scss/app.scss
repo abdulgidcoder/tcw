@@ -1,17 +1,17 @@
-@use "bootstrap/dist/css/bootstrap.rtl.min.css";
-@use "../fonts/hgi/hgi-stroke-rounded.css";
-@use "variables" as *;
-@use "fonts" as *;
-@use "global" as *;
-@use "swiper" as *;
-@use "loader" as *;
-@use "header" as *;
-@use "footer" as *;
-@use "pagination" as *;
-@use "pricing" as *;
-@use "project-box" as *;
-@use "home" as *;
-@use "single-project" as *;
+/*All SCSS modules first */
+@use "./variables.scss" as *;
+@use "./fonts.scss" as *;
+@use "./global.scss" as *;
+@use "./swiper.scss" as *;
+@use "./loader.scss" as *;
+@use "./header.scss" as *;
+@use "./footer.scss" as *;
+@use "./pagination.scss" as *;
+@use "./pricing.scss" as *;
+@use "./course-box.scss" as *;
+@use "./home.scss" as *;
+@use "./single-project.scss" as *;
+
 
 #app {
   position: relative;
@@ -36,7 +36,7 @@
   color: var(--primary);
   --size: 18px;
   margin-bottom: 15px;
-  margin-left: 15px;
+  //  margin-left: 15px;
 }
 
 .section-404 {
