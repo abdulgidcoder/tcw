@@ -1,0 +1,43 @@
+<div class="swiper-slide">
+  <div class="project-box">
+    <div class="project-box_wrap">
+      <div class="project-box_image">
+        <a href="./single-project.html">
+          <img loading="lazy" src="{{image}}" alt="{{title}}" />
+        </a>
+        <div class="badags">
+          <span class="badge text-bg-primary">شاع</span>
+          <span class="badge text-bg-danger">متميز</span>
+        </div>
+      </div>
+      <div class="project-box_body">
+        <p class="app-meta mb-1">
+          <span> {{ loadSvg('calendar-alt.svg') }} منذ يومين</span>
+          <span> {{ loadSvg('view.svg') }}15 مشاهدة</span>
+        </p>
+        <h6 class="project-box_title">
+          <a href="./single-project.html">{{title}}</a>
+        </h6>
+        <p class="app-meta">
+          <span
+            >{{ loadSvg('map-marker-alt.svg') }}السعودية, منطقة الرياض, الرياض,
+            القادسية</span
+          >
+        </p>
+        <ul>
+          <li>{{ loadSvg('home.svg') }}3 أدوار</li>
+          <li>{{ loadSvg('tag.svg') }}3 حمام</li>
+          <li>{{ loadSvg('flag.svg') }}3 غرفه</li>
+          <li>{{ loadSvg('home.svg') }}3 أدوار</li> 
+        </ul>
+      </div>
+      <div class="project-box_footer">
+        <div class="project-box_price"><strong>{{price}}</strong>ريال</div>
+        <div class="project-box_actions">
+          <a href="#" class="">{{ loadSvg('heart.svg') }}</a>
+          <a href="./single-project.html" class="">{{ loadSvg('view.svg') }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

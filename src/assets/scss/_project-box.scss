@@ -1,0 +1,121 @@
+ 
+.project-box {
+  max-width: 330px;
+    margin: 0 auto;
+  &_wrap {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  &_image {
+    position: relative;
+    background-color: #000;
+    overflow: hidden;
+    max-height: 12.5rem;
+    border-top-left-radius: 0.3125rem;
+    border-top-right-radius: 0.3125rem;
+    &:hover {
+      img {
+        transform: scale(1.1);
+        opacity: 0.7;
+      }
+    }
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 210px;
+      transition: 0.3s ease-in-out;
+    }
+    .badags {
+      position: absolute;
+      z-index: 5;
+      top: 0.75rem;
+      right: 0.75rem;
+      .badge {
+        &:not(:last-child) {
+          margin-left: 0.75rem;
+        }
+      }
+    }
+  }
+   &_location {
+    > span{
+      width: 100%;
+      .app-text-ellipsis{
+        flex-grow: 1;
+      }
+    }
+   }
+  &_body {
+    padding: 0.9375rem;
+    p {
+      color: #9b9b9b;
+    }
+    ul {
+      padding: 0;
+      margin-bottom: 0;
+      li {
+        display: inline-flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 0.75rem;
+        vertical-align: middle;
+        &:not(:last-child) {
+          margin-left: 0.75rem;
+        }
+        .app-icon {
+          --size: 16px;
+          color: var(--primary);
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+  &_title {
+    a {
+      color: var(--black);
+      text-decoration: none;
+      &:hover {
+        color: var(--primary);
+      }
+    }
+  }
+  &_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-top: 1px solid var(--gray2);
+  }
+  &_price {
+    font-size: 1.0625rem;
+    font-weight: 600;
+    strong {
+      color: var(--primary);
+      margin-left: 5px;
+    }
+  }
+  &_actions {
+    a {
+      border: 1px solid  var(--gray2);
+      border-radius: 50%;
+      width: 38px;
+      height: 38px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.875rem;
+      transition: 0.3s ease;
+      color: var(--secondary);
+      &:hover {
+        background-color: var(--secondary);
+        border-color: var(--secondary);
+        color: #fff;
+      }
+      &:not(:last-child) {
+        margin-left: 10px;
+      }
+    }
+  }
+}

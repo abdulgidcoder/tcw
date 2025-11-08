@@ -1,0 +1,61 @@
+@use "bootstrap/dist/css/bootstrap.rtl.min.css";
+@use "../fonts/hgi/hgi-stroke-rounded.css";
+@use "variables" as *;
+@use "fonts" as *;
+@use "global" as *;
+@use "swiper" as *;
+@use "loader" as *;
+@use "header" as *;
+@use "footer" as *;
+@use "pagination" as *;
+@use "pricing" as *;
+@use "project-box" as *;
+@use "home" as *;
+@use "single-project" as *;
+
+#app {
+  position: relative;
+  // overflow-x: hidden;
+}
+
+.app-main {
+  margin-top: 98px;
+}
+
+.app-main-content {
+  min-height: calc(100vh - 350px);
+  padding: 60px 0;
+}
+
+.contact-info ul li {
+  display: flex;
+  font-size: 1rem;
+}
+
+.contact-info ul li .app-icon {
+  color: var(--primary);
+  --size: 18px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+.section-404 {
+  padding-top: 50px;
+  text-align: center;
+
+  h1 {
+    font-size: clamp(40px, 12vw, 150px);
+    line-height: 1;
+  }
+}
+
+.sticky-top {
+  top: 105px;
+  z-index: 10;
+}
+
+.app-text-ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

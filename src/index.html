@@ -1,0 +1,15 @@
+@@include('partials/layouts/header.html', { "title": "%VITE_APP_NAME%" } );
+<main class="app-main">
+  <!-- Hero Section -->
+  @@include('partials/sections/hero-home.html');
+
+  <!-- banner -->
+  @@include('partials/sections/banner-slideshow.html');
+
+  <!-- Featured Projects -->
+  @@include('partials/sections/featured-projects.html');
+
+  <!-- Partners Section -->
+  @@include('partials/sections/partners.html', {"title": "الشركات المميزة", "clasess": "bg-white"});
+</main>
+@@include('partials/layouts/footer.html');
