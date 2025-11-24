@@ -19,7 +19,6 @@
 
     &::after {
       --swiper-navigation-size: 15px;
-
     }
 
     background-color: #fff;
@@ -35,7 +34,7 @@
       --swiper-navigation-sides-offset: 0;
     }
 
-    @media screen and (max-width:450px) {
+    @media screen and (max-width: 450px) {
       --swiper-navigation-sides-offset: 0;
       width: 30px;
       height: 30px;

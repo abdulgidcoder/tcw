@@ -6,10 +6,11 @@
 @use "./loader.scss" as *;
 @use "./header.scss" as *;
 @use "./footer.scss" as *;
-@use "./pagination.scss" as *;
-@use "./pricing.scss" as *;
+@use "./pagination.scss" as *; 
 @use "./course-box.scss" as *;
 @use "./home.scss" as *;
+@use "./about.scss" as *;
+@use "./contact.scss" as *;
 @use "./single-project.scss" as *;
 
 
@@ -23,21 +24,10 @@
 }
 
 .app-main-content {
-  min-height: calc(100vh - 350px);
+  min-height: calc(100vh - 480px);
   padding: 60px 0;
 }
 
-.contact-info ul li {
-  display: flex;
-  font-size: 1rem;
-}
-
-.contact-info ul li .app-icon {
-  color: var(--primary);
-  --size: 18px;
-  margin-bottom: 15px;
-  //  margin-left: 15px;
-}
 
 .section-404 {
   padding-top: 50px;

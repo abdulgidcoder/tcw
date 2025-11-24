@@ -1,0 +1,52 @@
+@@include('partials/layouts/header.html', { "title": "%VITE_APP_NAME%" } );
+<main class="app-main pb-0">
+  @@include('partials/layouts/hero.html', { "title": "الدورات" });
+  <div class="app-main-content">
+    <section class="filter mb-5">
+      <div class="container">
+        <form class="row gx-3 gy-2 align-items-center">
+          <div class="col">
+            <label class="visually-hidden" for="name">بحث</label>
+            <input type="text" class="form-control" placeholder="اسم الدورة...">
+          </div>
+          <div class="col-sm-3">
+            <label class="visually-hidden" for="cate">Preference</label>
+            <select class="form-select" id="cate">
+              <option selected>القسم</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary">بحث</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="projects">
+      <div class="container">
+        <div class="row g-4">
+          @@loop('partials/layouts/course-box.html', 'data/data.json');
+        </div>
+        <nav class="mt-5">
+          <ul class="pagination justify-content-center">
+            <li class="page-item">
+              <a class="page-link" href="#">
+                <i class="hgi hgi-stroke hgi-arrow-right-01"></i></a>
+            </li>
+            <li class="page-item">
+              <a class="page-link active" href="#">1</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#"><i class="hgi hgi-stroke hgi-arrow-left-01"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+  </div>
+</main>
+@@include('partials/layouts/footer.html');

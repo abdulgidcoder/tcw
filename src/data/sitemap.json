@@ -4,28 +4,12 @@
     "url": "./index.html"
   },
   {
-    "title": "2 الرئيسية",
-    "url": "./index2.html"
+    "title": "الدورات",
+    "url": "./courses.html"
   },
   {
-    "title": "المشاريع",
-    "url": "./projects.html"
-  },
-  {
-    "title": "تفاصيل المشروع",
-    "url": "./single-project.html"
-  },
-  {
-    "title": "تحديثات المشروع",
-    "url": "./project-updates.html"
-  },
-  {
-    "title": "البلاغات والاستعلام",
-    "url": "./inquiries.html"
-  },
-  {
-    "title": "الشركة",
-    "url": "./company.html"
+    "title": "الأسئلة الشائعة",
+    "url": "./faq.html"
   },
   {
     "title": "سياسة الخصوصية",

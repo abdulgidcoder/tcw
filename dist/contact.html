@@ -1,56 +1,50 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ريلتي ستيشنز - Real Estate</title>
-    <link rel="icon" href="./assets/app.png" />
-    <script type="module" crossorigin src="./assets/app17.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/app.css">
-  </head>
 
-  <body>
-    <div id="app" class="app">
-      <div id="app-loader" class="app-loader">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>معهد التميز الكندي - TCW</title>
+  <link rel="icon" href="./assets/app.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" />
+  <script type="module" crossorigin src="./assets/app11.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/app.css">
+</head>
+
+<body>
+  <div id="app" class="app">
+    <!-- <div id="app-loader" class="app-loader">
         <div class="app-loader-content">
           <div class="logo">
-            <img loading="lazy" src="./assets/app.png" alt="" />
+            <img loading="lazy" src="assets/images/favicon.png" alt="" />
           </div>
           <div class="loader"></div>
         </div>
-      </div>
-      <header class="app-header">
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container">
-            <a class="navbar-brand" href="./index.html">
-              <img
-                loading="lazy"
-                src="./assets/app2.png"
-                alt="Realty Stations Logo"
-              />
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav me-auto">
-                <li class="nav-item">
+      </div> -->
+
+
+    <header class="app-header">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">
+            <img loading="lazy" src="./assets/app.png" alt="Tcw Logo" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
   <a class="nav-link" href="./index.html">الرئيسية</a>
 </li>
 <li class="nav-item">
-  <a class="nav-link" href="./projects.html">المشاريع</a>
+  <a class="nav-link" href="./courses.html">الدورات</a>
 </li>
 <li class="nav-item">
-  <a class="nav-link" href="./pricing.html">الباقات</a>
-</li>
-<li class="nav-item">
-  <a class="nav-link" href="./inquiries.html">البلاغات والاستعلام</a>
+  <a class="nav-link" href="./faq.html">الأسئلة الشائعة</a>
 </li>
 <li class="nav-item">
   <a class="nav-link" href="./about.html">من نحن</a>
@@ -58,164 +52,142 @@
 <li class="nav-item">
   <a class="nav-link" href="./contact.html">تواصل معنا</a>
 </li>
-
-              </ul>
-              <button
-                class="btn btn-primary"
-                data-bs-toggle="modal"
-                data-bs-target="#modalSignin"
-              >
-                تسجيل دخول
-              </button>
+</ul>
+            <div class="d-flex align-items-center gap-2">
+              <a href="#" class="logo-other"><img loading="lazy" src="https://tcw.com.sa/asstes/img/h_logo-03.png"
+                  alt="Tcw Logo" /></a>
+              <a href="#" class="logo-other"><img loading="lazy" src="https://tcw.com.sa/asstes/img/h_logo-02.png"
+                  alt="Tcw Logo" /></a>
+              <a href="#" class="logo-other"><img loading="lazy" src="https://tcw.com.sa/asstes/img/h_logo-01.png"
+                  alt="Tcw Logo" /></a>
+              <a href="./login.html" class="login-link"><i class="hgi-stroke hgi-user"></i> تسجيل دخول</a>
             </div>
-          </div>
-        </nav>
-      </header>
-
-      <!-- Modal -->
-      <div
-        class="modal fade"
-        id="modalSignin"
-        data-bs-backdrop="static"
-        data-bs-keyboard="false"
-        tabindex="-1"
-        aria-labelledby="mapSearchLabel"
-        aria-hidden="true"
-      >
-        <div
-          class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-md"
-        >
-          <div class="modal-content rounded-4 shadow">
-            <div class="modal-header p-4">
-              <h1 class="modal-title fs-5" id="modalSigninLabel">تسجيل دخول</h1>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body p-4">      <form class="mb-0" >
-  
-          <div class="form-floating mb-3">
-            <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">البريد الالكترونى</label>
-          </div>
-          <div class="form-floating mb-3">
-            <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
-            <label for="floatingPassword">كلمة السر</label>
-          </div>
-          <div class="d-flex mb-3">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="Check">
-                    <label class="form-check-label" for="Check">
-                    تزكرنى
-                    </label>
-                  </div> 
-                  <a href="./password.html" class="d-inline-block ms-auto">نسيت كلمة السر؟</a>
-                </div>
-          <button class="w-100 mb-4 btn btn-primary" type="submit">دخول</button>
-          <div class="text-center">
-            <small class="text-body-secondary">ليس لديك حساب ؟ <a href="./register.html" class="ms-1">تسجيل</a></small> 
-          </div>
-        </form></div>
           </div>
         </div>
-      </div>
+      </nav>
+    </header>
  
-
 <main class="app-main">
   <div class="hero-page">
   <div class="container">
-    <div class="d-flex justify-content-between align-items-center">
-      <div class="right">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb py-2 mb-0">
-            <li class="breadcrumb-item">
-              <a href="./index.html">الرئيسية</a>
-            </li>
-            <li class="breadcrumb-item active">تواصل معنا</li>
-          </ol>
-        </nav>
-        <h1 class="h2 mb-0">تواصل معنا</h1>
-      </div>
-      <div class="left d-none d-lg-block">
-        <button class="btn btn-outline-primary"  onclick="window.history.back();">رجوع</button>
-      </div>
-    </div>
+    <h1 class="h2">تواصل معنا</h1>
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="./index.html"><i class="hgi hgi-stroke hgi-home-11"></i>الرئيسية</a>
+        </li>
+        <li class="breadcrumb-item active">تواصل معنا</li>
+      </ol>
+    </nav>
   </div>
 </div>
-
   <div class="app-main-content">
-    <section class="contact-section">
+    <section class="contact-section mb-5">
       <div class="container">
-        <div class="row row-cols-1 row-cols-lg-2">
-          <div class="contact-info">
-            <h2 class="mb-4">تواصل معنا</h2>
-            <ul class="p-0">
-              <li>
-                 <span class='app-icon me-2'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M192 96c-52.935 0-96 43.065-96 96s43.065 96 96 96 96-43.065 96-96-43.065-96-96-96zm0 160c-35.29 0-64-28.71-64-64s28.71-64 64-64 64 28.71 64 64-28.71 64-64 64zm0-256C85.961 0 0 85.961 0 192c0 77.413 26.97 99.031 172.268 309.67 9.534 13.772 29.929 13.774 39.465 0C357.03 291.031 384 269.413 384 192 384 85.961 298.039 0 192 0zm0 473.931C52.705 272.488 32 256.494 32 192c0-42.738 16.643-82.917 46.863-113.137S149.262 32 192 32s82.917 16.643 113.137 46.863S352 149.262 352 192c0 64.49-20.692 80.47-160 281.931z"/></svg></span>
-                <p>
-                  الطريق الدائري الجنوبي حي العزيزية، الرياض ، المملكة العربية
-                  السعودية .
-                </p>
-              </li>
-              <li>
-                 <span class='app-icon me-2'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm112-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v312z"/></svg></span>
-                <p><a href="tel:+9665000000000">+9665000000000</a></p>
-              </li>
-              <li>
-                 <span class='app-icon me-2'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"/></svg></span>
-                <p>
-                  <a href="mailto:info@realty-stations.com"
-                    >info@realty-stations.com</a
-                  >
-                </p>
-              </li>
-            </ul>
+        <div class="section-title">
+          <h2>تواصل معنا</h2>
+          <p>نساعد في تمهيد الطريق معاً كفريق واحد</p>
+        </div>
+        <div class="row g-4">
+
+          <div class="col-md-6 col-lg-4">
+            <div class="contact-box h-100">
+              <div class="contact-icon mb-3">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODM2OEU3RjU1NzI3MTFGMDhEM0VGQUExOTZGQ0UxRDMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODM2OEU3RjY1NzI3MTFGMDhEM0VGQUExOTZGQ0UxRDMiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4MzY4RTdGMzU3MjcxMUYwOEQzRUZBQTE5NkZDRTFEMyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4MzY4RTdGNDU3MjcxMUYwOEQzRUZBQTE5NkZDRTFEMyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PhAaAHIAAAfJSURBVHja1Jt5cBRV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" alt="call" />
+              </div>
+              <h3>اتصال هاتفي</h3>
+              <p>
+                المدربات - المتدربات / الطالبات
+                من الأحد إلى الخميس
+                من الساعة 8 صباحاً إلى 8 مساءً
+              </p>
+              <ul>
+                <li><a href="tel:0175224000">0175224000</a></li>
+                <li><a href="tel:0533349946">0533349946</a></i>
+              </ul>
+            </div>
           </div>
-          <div class="contact-form">
-            <h3 class="mb-4">اترك رسالة</h3>
-            <form>
-              <div class="mb-3">
-                <labe class="form-label">
-                  <input type="text" class="form-control" placeholder="الاسم" />
-                </labe>
+          <div class="col-md-6 col-lg-4">
+            <div class="contact-box h-100">
+              <div class="contact-icon mb-3">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAYAAACMRWrdAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NjZGNEJFNUM1NzI3MTFGMDlFMUVEOTZGQjYyQjcyMjYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NjZGNEJFNUQ1NzI3MTFGMDlFMUVEOTZGQjYyQjcyMjYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2NkY0QkU1QTU3MjcxMUYwOUUxRUQ5NkZCNjJCNzIyNiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2NkY0QkU1QjU3MjcxMUYwOUUxRUQ5NkZCNjJCNzIyNiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PosxoZsAAAPoSURBVHja7JrLTxNRFMZvHxTEoCJqjAhKwAdGg48QfCQKLkxMMHHlk8QYXZjoH+BCt27cqQtZGF3oghhjNDEqCugChZigEYGFglpEI5U3oi2P+h05TcZxWuZOb9sZ40l+aadz77TfzJlzzzlTV5q/XiiyWWADKAVFYC6TqeDYg2AA9IF20Ai6aEcor8JwglfBl64Fp8AhkCWSZyTsgq+74QrEjep3uuK4Yj5wFpxWdIKsWi84CHF/CHFbPFgauAXOpFgU2SJQiyt3QoWwalAp7GMecBHiyuMRth0cFfYz8pwbEJdhVdg5YV9bAqqsCFsOtgp720krwvZSJLW5sBK4Y46ssBJhf6MTv0U2VK8GYc4E4rXZvBYmwopnEpYNCkAOv78GrioO015Ou5aCVWCHAsHzownLBWVgge7zsOIzO8kEORdsBXfBJnAAZKgS5uZ1amUK75EQeA7aOAddZuEYmW6dqF0pFqW1YXAe+K1M1gpbD/JtFuHGwSV2VUvCqG7aaNPwPcQJtyVhxXEkxMmwZjAhK8xlo/sqmv0EL2SFZccRVpNp7bLCFgpnmF9WWJZDhI3KCvM5RNj4f2GaqOgEk8lTR9zi37RBK8JcCsckylv6ZApNqp738brXybVZn24M1W1HxHSLm8qQm+CVgfvvB5t5+xmPm1IorMXsFZsDjnN95uFMpcpg3GEuFj089hjP1do2UM5JAbGTSnmFoqZkhOUZRM9Cg3FFum2fQcVgNK9QobD6UF7FkFlhAYOoFIgyTh/JAibm9SoUVi0kMnr64vsacWOgxmBcDe+LiKI5X3VjGsBHzfYH8ERhFXD7d2RK89fTA6YVJidmc4D4xBm3kWVwz6SfA0i09TOX3/eYDBwUQS/H2P8dlMINO2hDtv02EOPHakuMThM3eLfKdQtURkRFzpzqzlOiLNqa9xCUQVSj9kOvbA6WQvPoPOcOuA5BdUaDnSSMypY9oIMDzmSswSQs5BBhX0CtTHY/7JTEVrZsCThEWI+ssJEYa5Jd7Ae7opQwocsE7Ghtstl/RFirjdcz8qjXspMiwvr5rNjNKGI/EpJdYH0S3MTrg12MkukH4JuVyV5d/kZnZ52YfkCRqu4VLbxvOVMPWj2I16B+In+mdjI9Oi3gjH6eSOxfi0Z52aHI905FlI72YyfYLbWumc7jPXw10/nq5ksGgiZ+Hed7KKi43yFky5aggWt8Brv56poJBPeSlenE21cMc0U8ZmLs02SmbyoappQV1M3gTm/A+2RGIFWdYLrpW2I0gpqTHVpVtrhfir+fYVF0ezxT7ZQIUxnCw1wvrQGLubnSKiSfa6myXwIMAAOn34fxf2ctAAAAAElFTkSuQmCC" alt="call" />
               </div>
-              <div class="mb-3">
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="البريد الالكترونى"
-                />
+              <h3>البريد الالكترونى</h3>
+              <p>
+                المدربات - المتدربات / الطالبات
+                من الأحد إلى الخميس
+                من الساعة 8 صباحاً إلى 8 مساءً
+              </p>
+              <ul>
+                <li><a href=":alcanadi@tcw.com.sa">alcanadi@tcw.com.sa</a></i>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="contact-box h-100">
+              <div class="contact-icon mb-3">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAB2AAAAdgB+lymcgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAmfSURBVHic1Zt/cFTVFcc/573dze/NL0hCAhhAQIXKr1FEK4KOtrUd2zIKiFoFK1RUqrXOdOw4jXU6U5x2tCh1GEVFBx2D2joOKkyrjhUVsBMcoRAkEAgESYgk2Wyy2ey7p38AMYSQvLc/An53zh977z3nnvt95929P84KKcaz+laxEJ1pjEwUGI8wXiBPkVzQHMABwkAz0IRSjcUu0O1dRD9aKrccS6V/kgqjf9fKaZaxFgDXARMS6MdBqRJhQ8yy1t4jc3Ymz8vjSBoBK7UyWwyLQRahTEiW3V7YgujqmJW9Zplc35kMgwkTsEorc6MxWQb8GihM3CVXOCTKX6J+XfUbmduRiKGECHiyc91NIjwFFCdiJ24IB8XoA8vS5r4ev4k48LeOypFq86KqzI634+RC/2kHWLxM5jZ61fRMwF8j636iqmuAAq+6KcYRFb31ofR5//Ki5ImAx8OVjyI84lVvEBET9MGHMuetcKvgaiCVWmnvadeVgiyJ37dBhMqK32XdeL+I6EBNBySgQissf/jCtSDzk+PdIEF11cPZc+8eiATfQHastgufcGA+DEjmuYYlj7VVNgG/769RvxHwaOi1R1T5Y1LdGmyo3FeRO/fpM1WfkYCK5sqrjehGwPbS3zA7n2F2LrbYtJh29sca6dSYFxPJRkyFWY8F523qq7JPAh5ue6VYYvY2lBK3veRZmVyfOZlSX/4p5Z0a4+NINVWdtV6cTioUDgZsZ0pFcMHR3nV9zgEmaq8W1PXgi+wgN+VMJ1MCaK+5IiA2V2dcRBo+Pol85dn5JGF4Z8x6Cri5d8VpEfDbo6/+3BJ5063lIjvI/OBlZIi/33YG5aXWTRyJtbg1nXSIcP3ygvnvnlLW80tF/duZbYHwTmCkG4NFviDzg9PJkIArB/ZGG1gX2urW31Rgd3ah9b0KmRs9WXDKK9DqDy9WdTf4QjubecHppIv/tLA/E0YFhlJs51J/9qJgXOtRvR149mRBdwQs1lX+jIbgHmRgAiyEXxbMZIid7dmDmmgjr7Vs8ayXROzNH1oyvkJmx6BHBKQdCd7mwEg3D3NsegmFdnZcS6PRgaEU23nUdzXHoZ0UjG5qODIPWAtgnSx1DHcaBTdS7i9EIW65Mmusq35SJkYXnRy3BbC0rvJ8AzPcGki3Ahg0bhmdNpQiX/CsEeAos391+NVyOPEKdFmxBaj7LW6niSW8Myjy5XIoetYmQ0F1HrDcB2CUa71oNzuRhAhoN1GqIw2Ys7i/UuQ6YLksrn87M+qEjgHufsyByZllzCmYFFfH7SbKi42b+borFJd+EhEJ4yvwRbpaL0dcrmRO4EBnS1wREDZRXmw4JwYPkJ4lznSfgQnqMRaPREO0OBGCdronvZpIE4c6Wz3ppBIGneiLGcbHc8D3v/YjXJrjatHYjQJf5ll973tDhfE+VcbF49N/Qwe5xCMBxYEgQTuD5lhCdxlJgyrjfUZliNu1fE/sizRzOBqiJJDjSW9W3vm80fil5/5SAmGI5ajJMarEI+8f24N6/EzNLqPYnx1Xf0kXozmWo2Q7x1dHnqUqdJiGrrCnZbCIML94CrbYcfWZZMmxjEGNgXgkZpT1jdWe9wJFgWzuKJmGpVZc/SZTLEdpToTFbaGv2RE+4n0/kFnIbaVTXUXCEH82mVYg6RFgIGSPWfqz2xTKvD7FnrKvo5kZeSOwpHtz6QpDAlmMzxpKdbiJdifa5+ty87BJ3FgykSvzy8nzZVDfGaLd6UpoN9otyn571D1zblIYk4ihdqeLpq4OLg66PkftRtCXxvS8EaRZPvZHWokac3zwCAtKJzEtWAonyBienssV+SMpDGRxqDNEOHEittvlS+dcDlySKJv1nSHy/emUpQc9k2CLMCoznyvyRzIiPZfCQBbXDBnNxTmnpx2ICKXpOVyRP5I8fwb1kba4IwJ412fgi4GvEN3htcM7GJ4epDQOEgDSLB8XB0u6I6k/tyyxuCxvBNNyy1jfsJv3j+7z3J8I1T5i8oUjJi6He8MxDitrP+eBMTMo8GckxeZAsMXihuILEBU2NtZ40rVEtlsBzJdGiSXrtOWbaISn924hFDt9Ukul/LB4LAX+DC++RsiOfWZtnPSLsKN8nMyfl/pImKf3baXDdOF1pRjvxxZhal6pBz9104ejFkYsADX8I9nnbvvCLTy5ZyttgxgJpenuzxkdlY1w4lBUbetNR1UdVZIpNeFjPP7VZzRFOwaFAANufTPaFXu1m4DNk249aJTNqTiBPdTRxp+rP+VAR0vKX4MD7S1u/fpw66WL6roJAHDQJ1J1DN0UjfCnXZ/yYWMd5sSTSrZE1bCp6ZBLn2T1yXF33wyNq8l8Y1d5Rw0whhTAMYY1tdvZ2drELeddRJbP0zHkgFhXV83RSMRFS9lbGB5R2f2tZ9WEzWvuBX0qqZ71gSyfn5+Wnc/s4vOwkpBxt+HwPirrdrlsLXftmH77cye/nXI77EAtmrA/A6K1q4uXa3fyydHDzBk+joty408xXl9fw+t1u90232XnZLzUs+AUAlTNFNXBy4H8KtTM8p1bGJOdx49KRzElvwjbw45yfX0N6w64Hjwo9+6a8G1uAPQiIGasyf2vwFOD3aFmdldXkeMPMGPIMKbmFzM2mI9P+n4YMVUq91ez4XCt6z4EeWXP5bf/u3f5KQQYNVO9uZ5ctEQ7ea++lvfqa0mzfZRn5VCWkUNZZjZF6Vkohr1tLfyn4SBNnW4mvG7URX2yrK+KborLP3ghz/j4hnM3DzhOSAxl1oGZd/SZJtcdATEfk/FwQ/xdgWCW1c1c1OfgoQcBqjqoE+CgQHmsftaiZ/pr0k2AY5gczwXJuQqBZ76+auEfYGG/7b4lQJmScq8GC8KKxqsW3o/bdPnyD15Ib1VtBfrPdjz3ERPR+5tm37nSrYIP4BhmougAqZ7nPg6K0Zu/ufbOj70oHU+R6ZLJJOtk9GxAeR1/7O7QNUtOS4YeCD4AR3TKd3H8AnsN1n3t1y18J14bPgA1XOhh/BFgu0KVhVSp0W1iywRVfRC4IF5HPKIO1cc70uznmL3Q05KwN45HgHLwDPXNClWobkOoEsfeFs3cv5PZFb3/AfEpFRXPB2YMv0FUHlD4Pj0OW5IGkc/U6HNdoZyXmXvqpiZukwC88/xQW0yFQAkqO1So8ltmW+QHd+2Ly+rba8r8dmyOWnojmhAZDsLnwAbbMWs7f7zYw9bPHVK/9HtrdQ5pZjKOTLUspqkyGsjvIQK0AS1Ao8Auo1QjbMfvfMS1S1KaTfl/6oPLgRFYDJAAAAAASUVORK5CYII=" alt="call" />
               </div>
-              <div class="mb-3">
+              <h3>واتساب</h3>
+              <p>
+                المدربات - المتدربات / الطالبات
+                من الأحد إلى الخميس
+                من الساعة 8 صباحاً إلى 8 مساءً
+              </p>
+              <ul>
+                <li><a href="tel:0175224000">0175224000</a></li>
+                <li><a href="tel:0533349946">0533349946</a></i>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-form">
+      <div class="container">
+        <div class="contact-form_wrapper">
+          <h3 class="mb-4">اترك رسالة</h3>
+          <form>
+            <div class="mb-3">
+              <labe class="form-label">
+                <input type="text" class="form-control" placeholder="الاسم" />
+              </labe>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <input type="email" class="form-control" placeholder="البريد الالكترونى" />
+              </div>
+              <div class="col-md-6 mb-3">
                 <input type="tel" class="form-control" placeholder="الجوال" />
               </div>
-              <div class="mb-3">
-                <textarea class="form-control" placeholder="الرسالة"></textarea>
-              </div>
-              <div class="d-grid gap-2">
-                <button class="btn btn-primary" type="button">ارسال</button>
-              </div>
-            </form>
-          </div>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" placeholder="الرسالة"></textarea>
+            </div>
+            <button class="btn btn-secondary" type="button">ارسال</button>
+          </form>
         </div>
       </div>
     </section>
   </div>
 </main>
-    <!-- Footer -->
-    <footer class="app-footer">
-      <div class="container">
-        <div class="app-footer-top">
-          <div class="row align-items-center">
-            <div class="col-lg-6 text-lg-start text-center mb-3 mb-lg-0">
-              <a href="./index.html" class="logo"><img loading="lazy" src="./assets/app2.png" alt="" /></a>
-            </div>
-            <div class="col-lg-6">
-              <ul class="nav justify-content-center justify-content-lg-end">
-                <li class="nav-item">
+<!-- Footer -->
+<footer class="app-footer">
+  <div class="app-footer_map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.123456789!2d44.223196!3d17.548214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDMyJzUzLjYiTiA0NMKwMTMnMjMuNSJF!5e0!3m2!1sar!2ssa!4v1642000000000!5m2!1sar!2ssa"
+      height="250" style="border: 0;
+  width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div class="app-footer-top">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 text-lg-start text-center mb-3 mb-lg-0">
+          <a href="./index.html" class="logo"><img loading="lazy" src="./assets/app.png" alt="" /></a>
+        </div>
+        <div class="col-lg-6">
+          <ul class="nav justify-content-center justify-content-lg-end">
+            <li class="nav-item">
   <a class="nav-link" href="./index.html">الرئيسية</a>
 </li>
 <li class="nav-item">
@@ -230,53 +202,32 @@
 <li class="nav-item">
   <a class="nav-link" href="./contact.html">اتصل بنا</a>
 </li>
-
-              </ul>
-            </div>
-          </div>
+</ul>
         </div>
-        <div class="app-footer-bottom">
-          <div class="row align-items-center">
-            <div class="col-lg-6 text-lg-start text-center mb-3 mb-lg-0">
-              <p class="copy-right mb-0">© 2024 - ريلتي ستيشنز جميع الحقوق محفوظة</p>
-            </div>
-            <div class="col-lg-6 text-lg-end text-center">
-              <div class="social-links">
-                <a href="#"><span class='app-icon '><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 320 512" style="enable-background:new 0 0 320 512;" xml:space="preserve">
-<path d="M279.1,288l14.2-92.7h-88.9v-60.1c0-25.3,12.4-50.1,52.2-50.1h40.4V6.3c0,0-36.7-6.3-71.7-6.3
-	c-73.2,0-121.1,44.4-121.1,124.7v70.6H22.9V288h81.4v224h100.2V288H279.1z"/>
-</svg></span></a>
-                <a href="#"><span class='app-icon '><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-<path d="M459.4,151.7c0.3,4.5,0.3,9.1,0.3,13.6c0,138.7-105.6,298.6-298.6,298.6c-59.5,0-114.7-17.2-161.1-47.1
-	c8.4,1,16.6,1.3,25.3,1.3c49.1,0,94.2-16.6,130.3-44.8c-46.1-1-84.8-31.2-98.1-72.8c6.5,1,13,1.6,19.8,1.6c9.4,0,18.8-1.3,27.6-3.6
-	c-48.1-9.7-84.1-52-84.1-103v-1.3c14,7.8,30.2,12.7,47.4,13.3c-28.3-18.8-46.8-51-46.8-87.4c0-19.5,5.2-37.4,14.3-53
-	C87.4,130.9,165,172.5,252.1,177.1c-1.6-7.8-2.6-15.9-2.6-24c0-57.8,46.8-104.9,104.9-104.9c30.2,0,57.5,12.7,76.7,33.1
-	c23.7-4.5,46.5-13.3,66.6-25.3c-7.8,24.4-24.4,44.8-46.1,57.8c21.1-2.3,41.6-8.1,60.4-16.2C497.7,118.3,479.8,136.8,459.4,151.7
-	L459.4,151.7z"/>
-</svg></span></a>
-                <a href="#"><span class='app-icon '><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 448 512" style="enable-background:new 0 0 448 512;" xml:space="preserve">
-<path d="M224.1,141c-63.6,0-114.9,51.3-114.9,114.9s51.3,114.9,114.9,114.9S339,319.5,339,255.9S287.7,141,224.1,141z M224.1,330.6
-	c-41.1,0-74.7-33.5-74.7-74.7s33.5-74.7,74.7-74.7s74.7,33.5,74.7,74.7S265.2,330.6,224.1,330.6L224.1,330.6z M370.5,136.3
-	c0,14.9-12,26.8-26.8,26.8c-14.9,0-26.8-12-26.8-26.8s12-26.8,26.8-26.8S370.5,121.5,370.5,136.3z M446.6,163.5
-	c-1.7-35.9-9.9-67.7-36.2-93.9c-26.2-26.2-58-34.4-93.9-36.2c-37-2.1-147.9-2.1-184.9,0C95.8,35.1,64,43.3,37.7,69.5
-	s-34.4,58-36.2,93.9c-2.1,37-2.1,147.9,0,184.9c1.7,35.9,9.9,67.7,36.2,93.9s58,34.4,93.9,36.2c37,2.1,147.9,2.1,184.9,0
-	c35.9-1.7,67.7-9.9,93.9-36.2c26.2-26.2,34.4-58,36.2-93.9C448.7,311.3,448.7,200.5,446.6,163.5L446.6,163.5z M398.8,388
-	c-7.8,19.6-22.9,34.7-42.6,42.6c-29.5,11.7-99.5,9-132.1,9s-102.7,2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6
-	c-11.7-29.5-9-99.5-9-132.1s-2.6-102.7,9-132.1c7.8-19.6,22.9-34.7,42.6-42.6c29.5-11.7,99.5-9,132.1-9s102.7-2.6,132.1,9
-	c19.6,7.8,34.7,22.9,42.6,42.6c11.7,29.5,9,99.5,9,132.1S410.5,358.6,398.8,388z"/>
-</svg></span></a>
-                <a href="#"><span class='app-icon '><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></span></a>
-                <a href="#"><span class='app-icon '><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></span></a>
-              </div>
-            </div>
+      </div>
+    </div>
+  </div>
+  <div class="app-footer-bottom">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 text-lg-start text-center mb-3 mb-lg-0">
+          <p class="copy-right mb-0">© 2025 - معهد التميز الكندي - TCW</p>
+        </div>
+        <div class="col-lg-6 text-lg-end text-center">
+          <div class="social-links">
+            <a href="#"><i class="hgi-stroke hgi-facebook-01"></i></a>
+            <a href="#"><i class="hgi-stroke hgi-twitter"></i></a>
+            <a href="#"><i class="hgi-stroke hgi-instagram"></i></a>
+            <a href="#"><i class="hgi-stroke hgi-linkedin"></i></a>
+            <a href="#"><i class="hgi-stroke hgi-whatsapp"></i></a>
           </div>
         </div>
       </div>
-    </footer>
-   </div>
-  </body>
-</html>
+    </div>
+  </div>
+</footer>
+</div>
 
+        </body>
+
+</html>

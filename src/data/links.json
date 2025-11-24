@@ -4,16 +4,12 @@
     "url": "./index.html"
   },
   {
-    "title": "المشاريع",
-    "url": "./projects.html"
+    "title": "الدورات",
+    "url": "./courses.html"
   },
   {
-    "title": "الباقات",
-    "url": "./pricing.html"
-  },
-  {
-    "title": "البلاغات والاستعلام",
-    "url": "./inquiries.html"
+    "title": "الأسئلة الشائعة",
+    "url": "./faq.html"
   },
   {
     "title": "من نحن",

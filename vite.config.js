@@ -3,6 +3,7 @@ import fileIncludePlugin from "vite-file-include";
 import { fileURLToPath } from "url";
 import fs from "fs";
 import path from "path";
+import { error } from "console";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -20,8 +21,17 @@ export default defineConfig({
         assetFileNames: "assets/app.[ext]",
       },
       input: {
-        main: path.resolve(__dirname, "src/index.html"),
-        // ... all other entries
+        index: path.resolve(__dirname, "src/index.html"),
+        courses: path.resolve(__dirname, "src/courses.html"),
+        faq: path.resolve(__dirname, "src/faq.html"),
+        error: path.resolve(__dirname, "src/404.html"),
+        login: path.resolve(__dirname, "src/login.html"),
+        register: path.resolve(__dirname, "src/register.html"),
+        about: path.resolve(__dirname, "src/about.html"),
+        contact: path.resolve(__dirname, "src/contact.html"), 
+        privacy: path.resolve(__dirname, "src/privacy-policy.html"), 
+        terms: path.resolve(__dirname, "src/terms-conditions.html"), 
+        
       },
     },
   },

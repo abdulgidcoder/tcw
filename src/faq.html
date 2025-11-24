@@ -1,0 +1,60 @@
+@@include('partials/layouts/header.html', { "title": "%VITE_APP_NAME%" } );
+<main class="app-main">
+  @@include('partials/layouts/hero.html', { "title": "الأسئلة الشائعة" });
+  <div class="app-main-content">
+    <section class="section">
+      <div class="container">
+        <div class="accordion" id="accordionFaq">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                هل شهادات المعهد الكندي معتمدة ؟
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFaq">
+              <div class="accordion-body">نعم
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                هل جميع برامج المعهد معتمدة من المؤسسة العامة للتدريب التقني والمهني ؟
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+              <div class="accordion-body">
+                نعم معتمدة ماعدا مستويات الإنجليزية فهي معتمدة من معتمدة من المؤسسة العامة للتدريب التقني والمهني
+                واعتماد التعليم
+                الإلكتروني
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                كم عدد برامج معهد التميز الكندي؟
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+              <div class="accordion-body">
+
+                <p>يوجد ثلاثة برامج تدريبية وهي كالاتي</p>
+                <ul>
+                  <li> برامج الدبلوم ومدتها سنتين ونصف</li>
+                  <li>برامج التأهيلية ومدتها من ثلاثة اشهر الى ستة اشهر </li>
+                  <li>برامج التطويرية ومدتها من 3 أيام الى 30 يوم </i>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+@@include('partials/layouts/footer.html');

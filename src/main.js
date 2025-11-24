@@ -32,27 +32,7 @@ const slideshow = new Swiper(".slideshow-section .swiper", {
     prevEl: ".slideshow-section .swiper-button-prev",
   },
   modules: [Navigation, Autoplay, EffectFade],
-});
-const courses = new Swiper(".courses-cates-carousel .swiper", {
-  slidesPerView: 1,
-  spaceBetween: 25,
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
-    },
-    992: {
-      slidesPerView: 3,
-    },
-    1400: {
-      slidesPerView: 4,
-    },
-  },
-  navigation: {
-    nextEl: ".featured-courses .swiper-button-next",
-    prevEl: ".featured-courses .swiper-button-prev",
-  },
-  modules: [Navigation],
-});
+}); 
 const coursesCates = new Swiper(".courses-carousel .swiper", {
   slidesPerView: 1,
   spaceBetween: 25,
@@ -68,8 +48,8 @@ const coursesCates = new Swiper(".courses-carousel .swiper", {
     },
   },
   navigation: {
-    nextEl: ".featured-courses .swiper-button-next",
-    prevEl: ".featured-courses .swiper-button-prev",
+    nextEl: ".courses-carousel .swiper-button-next",
+    prevEl: ".courses-carousel .swiper-button-prev",
   },
   modules: [Navigation],
 });

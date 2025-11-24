@@ -1,0 +1,35 @@
+.contact-box {
+  border: 1px solid var(--secondary);
+  border-radius: 0.625rem;
+  padding: 3.125rem 2.5rem;
+  .contact-icon {
+    margin-bottom: 15px;
+    img {
+      width: 60px;
+    }
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+
+    a {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.8;
+      color: var(--dark);
+      &:hover {
+        color: var(--secondary);
+      }
+    }
+  }
+}
+
+.contact-form {
+  &_wrapper {
+    padding: 60px;
+    background: var(--white);
+    box-shadow: 0px 15px 40px -10px rgb(109 117 143 / 33%);
+    border-radius: 10px;
+  }
+}
