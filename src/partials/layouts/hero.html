@@ -6,6 +6,12 @@
         <li class="breadcrumb-item">
           <a href="./index.html"><i class="hgi hgi-stroke hgi-home-11"></i>الرئيسية</a>
         </li>
+        @@if (typeof prevText !== "undefined") {
+        <li class="breadcrumb-item">
+          <a href="{{ typeof prevLink !== " undefined" ?? '#'
+            }}">{{ typeof prevText !== "undefined" ? prevText : ''}}</a>
+        </li>
+        }
         <li class="breadcrumb-item active">{{title}}</li>
       </ol>
     </nav>

@@ -6,8 +6,7 @@
         <p>بعض الدورات المميزة التي اخترناها</p>
       </div>
       <div>
-        <a href="./courses.html" class="btn btn-sm btn-outline-primary">عرض الكل<i
-            class="hgi-stroke hgi-angle-left ms-2"></i></a>
+        <a href="./courses.html" class="btn btn-sm btn-outline-primary">عرض الكل</a>
       </div>
     </div>
     <nav>
@@ -19,7 +18,7 @@
           </div>
           <div class="course-cate_content">
             <h4>التسويق</h4>
-            <span>5 دورات</span>
+            <span>8 دورات</span>
           </div>
         </button>
         <button class="course-cate" data-bs-toggle="tab" data-bs-target="#cate-2-tab" type="button" role="tab"
@@ -28,8 +27,28 @@
             <i class="hgi hgi-stroke hgi-star-off"></i>
           </div>
           <div class="course-cate_content">
-            <h4>التسويق</h4>
-            <span>5 دورات</span>
+            <h4>البرمجة</h4>
+            <span>12 دورات</span>
+          </div>
+        </button>
+        <button class="course-cate" data-bs-toggle="tab" data-bs-target="#cate-3-tab" type="button" role="tab"
+          aria-controls="cate-3-tab" aria-selected="false">
+          <div class="course-cate_icon">
+            <i class="hgi hgi-stroke hgi-star-off"></i>
+          </div>
+          <div class="course-cate_content">
+            <h4>التصميم</h4>
+            <span>3 دورات</span>
+          </div>
+        </button>
+        <button class="course-cate" data-bs-toggle="tab" data-bs-target="#cate-4-tab" type="button" role="tab"
+          aria-controls="cate-4-tab" aria-selected="false">
+          <div class="course-cate_icon">
+            <i class="hgi hgi-stroke hgi-star-off"></i>
+          </div>
+          <div class="course-cate_content">
+            <h4>الترجمة</h4>
+            <span>6 دورات</span>
           </div>
         </button>
       </div>
@@ -50,6 +69,32 @@
         </div>
       </div>
       <div class="tab-pane fade" id="cate-2-tab" role="tabpanel" aria-labelledby="cate-2-tab" tabindex="0">
+        <div class="courses-carousel" id="courses-2">
+          <div class="app-swiper-container">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                @@loop('../layouts/course-slide.html', '../../data/data.json')
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="cate-3-tab" role="tabpanel" aria-labelledby="cate-3-tab" tabindex="0">
+        <div class="courses-carousel" id="courses-2">
+          <div class="app-swiper-container">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                @@loop('../layouts/course-slide.html', '../../data/data.json')
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="cate-4-tab" role="tabpanel" aria-labelledby="cate-4-tab" tabindex="0">
         <div class="courses-carousel" id="courses-2">
           <div class="app-swiper-container">
             <div class="swiper">

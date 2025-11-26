@@ -6,13 +6,12 @@
 @use "./loader.scss" as *;
 @use "./header.scss" as *;
 @use "./footer.scss" as *;
-@use "./pagination.scss" as *; 
+@use "./pagination.scss" as *;
 @use "./course-box.scss" as *;
 @use "./home.scss" as *;
 @use "./about.scss" as *;
 @use "./contact.scss" as *;
-@use "./single-project.scss" as *;
-
+@use "./_single-course.scss" as *;
 
 #app {
   position: relative;
@@ -21,13 +20,18 @@
 
 .app-main {
   margin-top: 98px;
+  @media screen and (max-width: 992px) {
+    margin-top: 85px;
+  }
 }
 
 .app-main-content {
   min-height: calc(100vh - 480px);
-  padding: 60px 0;
+  padding: 3.75rem 0;
+  @media screen and (max-width: 768px) {
+    padding: 2.5rem 0;
+  }
 }
-
 
 .section-404 {
   padding-top: 50px;

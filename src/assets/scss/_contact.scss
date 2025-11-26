@@ -2,6 +2,9 @@
   border: 1px solid var(--secondary);
   border-radius: 0.625rem;
   padding: 3.125rem 2.5rem;
+  @media screen and (max-width: 768px) {
+    padding: 1.5625rem;
+  }
   .contact-icon {
     margin-bottom: 15px;
     img {
@@ -27,9 +30,12 @@
 
 .contact-form {
   &_wrapper {
-    padding: 60px;
+    padding: 3.75rem;
     background: var(--white);
     box-shadow: 0px 15px 40px -10px rgb(109 117 143 / 33%);
     border-radius: 10px;
+    @media screen and (max-width: 768px) {
+      padding: 1.5625rem;
+    }
   }
 }

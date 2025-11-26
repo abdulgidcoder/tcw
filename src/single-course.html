@@ -1,0 +1,91 @@
+@@include('partials/layouts/header.html', { "title": "%VITE_APP_NAME%" } );
+<main class="app-main single-course">
+  @@include('partials/layouts/hero.html', { "title": "دبلوم إدارة المشاريع" , "prevLink": "#", "prevText": "التسويق" });
+  <div class="app-main-content pb-0">
+    <section class="single-course-section mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="single-course-image mb-4">
+              <img src="assets/images/courses/1.jpg" alt="courses">
+            </div>
+            <div class="single-course-content mb-4">
+              <h2> دبلوم إدارة المشاريع </h2>
+              <p>صمم دبلوم التسويق في قسم التقنية الإدارية بما يتوافق مع احتياجات سوق العمل المحلية للتخصص
+                ويتم التدريب عليه في الكليات
+                التقنية. في خمسة فصول تدريبية فصلية مدة كل فصل تدريبي ثمانية عشر أسبوعا تدريبيا بمجموع (1632) ساعة تدريب
+                إضافة الى (490)
+                ساعة تدريب عملي في سوق العمل بما يعادل (84)ساعة معتمدة ويتم التدريب في هذا البرنامج على المهارات
+                التخصصية في مهنة مندوب
+                المبيعات. يمنح المتخرج الشهادة الجامعية المتوسطة في تخصص التسويق من قسم التقنية الإدارية.</p>
+              <h3>ماذا ستتعلم؟</h3>
+              <ul>
+                <li>تعلم أساسيات إدارة المشاريع ومراحلها المختلفة</li>
+                <li>اكتساب مهارات التخطيط الفعال وتحديد الأهداف والجدول الزمني</li>
+                <li>إتقان تقنيات إدارة المخاطر وحل المشكلات التي تواجه المشاريع</li>
+                <li>تطوير القدرة على التواصل والقيادة داخل فرق العمل</li>
+              </ul>
+              <img src="assets/images/courses/2.jpg" alt="courses">
+              <h3>ماذا ستتعلم؟</h3>
+              <ul>
+                <li>فهم متطلبات العملاء وتحليل بيئة المشروع</li>
+                <li>استخدام أدوات إدارة الجودة والتكلفة والوقت</li>
+                <li>تطبيق منهجيات إدارة المشاريع المعتمدة دولياً</li>
+                <li>الإعداد للحصول على شهادات مهنية في إدارة المشاريع</li>
+              </ul>
+
+            </div>
+
+
+          </div>
+          <div class="col-lg-4 ps-lg-4 mt-4 mt-lg-0">
+            <aside class="single-course-sidebar sticky-top">
+              <div class="sidebar-widget">
+                <div class="single-course-price">
+                  <div class="price-item">
+                    <strong class="value">30</strong>
+                    <span class="currency">ريال</span>
+                  </div>
+                  <div class="price-item old">
+                    <strong class="value">15</strong>
+                    <span class="currency">ريال</span>
+                  </div>
+                </div>
+
+                <div class="d-grid gap-3 my-4">
+                  <a href="https://tcw.com.sa/ipms/0" class="btn btn-outline-secondary" target="_blank"><i
+                      class="hgi hgi-stroke hgi-pdf-01"></i>وثيقة
+                    البرنامج</a>
+                  <a href="#" class="btn btn-secondary" target="_blank"><i
+                      class="hgi hgi-stroke hgi-pdf-01"></i>تسجيل</a>
+                </div>
+                <ul>
+                  <li><strong><i class="hgi hgi-stroke hgi-user"></i>المدرب:</strong><span>محمد عبدالله</span></li>
+                  <li><strong><i class="hgi hgi-stroke hgi-diploma"></i>الشهادات:</strong><span>نعم</span></li>
+                  <li><strong><i class="hgi hgi-stroke hgi-files-01"></i>الدروس:</strong><span>17</span></li>
+                  <li><strong><i class="hgi hgi-stroke hgi-clock-01"></i>المدة:</strong><span>15 أسبوعاً</span></li>
+                  <li><strong><i class="hgi hgi-stroke hgi-calendar-03"></i>تاريخ البدء
+                      ::</strong><span>2025-12-7</span>
+                  </li>
+                  <li><strong><i class="hgi hgi-stroke hgi-pdf-01"></i>عدد الطلاب:</strong><span>646</span></li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="courses-related">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>دورات ذات صلة</h2>
+          <p>نساعد في تمهيد الطريق معاً كفريق واحد</p>
+        </div>
+        <div class="row g-4">
+          @@loop('partials/layouts/course-box.html', 'data/data-4.json');
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+@@include('partials/layouts/footer.html');

@@ -91,15 +91,18 @@
   padding: 6.25rem 0;
   background: linear-gradient(to left, #e5fff3 0%, #e0f1ff 30%, #fdf2ef 100%);
   text-align: center;
+  @media screen and (max-width: 768px) {
+    padding: 3.75rem 0;
+  }
   .breadcrumb {
     justify-content: center;
     li {
-      font-size: 18px;
+      font-size: 1.125rem;
       font-weight: 500;
     }
     a {
       i {
-        margin-inline-end: 5px;
+        margin-inline-end: .3125rem;
         font-weight: 600;
       }
     }

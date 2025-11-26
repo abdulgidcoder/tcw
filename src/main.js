@@ -19,10 +19,10 @@ import "@/assets/scss/app.scss";
 // init Swiper:
 const slideshow = new Swiper(".slideshow-section .swiper", {
   slidesPerView: 1,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
   effect: "fade",
   spaceBetween: 30,
   fadeEffect: { crossFade: true },
@@ -31,16 +31,22 @@ const slideshow = new Swiper(".slideshow-section .swiper", {
     nextEl: ".slideshow-section .swiper-button-next",
     prevEl: ".slideshow-section .swiper-button-prev",
   },
-  modules: [Navigation, Autoplay, EffectFade],
+  pagination: {
+    el: ".slideshow-section .swiper-pagination",
+    dynamicBullets: true,
+  },
+  modules: [Navigation, Autoplay, EffectFade, Pagination],
 }); 
 const coursesCates = new Swiper(".courses-carousel .swiper", {
   slidesPerView: 1,
-  spaceBetween: 25,
+  spaceBetween: 10,
   breakpoints: {
     768: {
+      spaceBetween: 20,
       slidesPerView: 2,
     },
     992: {
+      spaceBetween: 25,
       slidesPerView: 3,
     },
     1400: {

@@ -1,0 +1,105 @@
+.single-course {
+  &-image {
+    img {
+      border-radius: var(--border-radius);
+      width: 100%;
+    }
+  }
+  &-content {
+    img {
+      border-radius: var(--border-radius);
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        position: relative;
+        padding-inline-start: 22px;
+        margin-bottom: 15px;
+        &::before {
+          content: "䤇";
+          font-family: "hgi-stroke-rounded" !important;
+          font-style: normal;
+          display: inline-block;
+          right: 0;
+          top: 0;
+          font-weight: 600;
+          font-size: 18px;
+          color: var(--secondary);
+          vertical-align: middle;
+          position: absolute;
+        }
+      }
+    }
+  }
+  &-price {
+    font-size: 1.5rem;
+    display: flex;
+    gap: 12px;
+    align-items: end;
+    justify-content: center;
+    direction: rtl;
+    margin-bottom: 1.875rem;
+
+    .price-item {
+      display: flex;
+      gap: 4px;
+      align-items: end;
+      font-size: 2rem;
+      line-height: 1;
+      .value {
+        font-weight: 600;
+      }
+      .currency {
+        font-weight: 600;
+      }
+      &.old {
+        font-size: 0.8em;
+        text-decoration: line-through;
+        opacity: 0.4;
+      }
+    }
+  }
+
+  &-sidebar {
+    .sidebar-widget {
+      padding: 1.875rem;
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      background: var(--white);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: var(--border-radius);
+
+      ul {
+        padding: 0;
+        margin-bottom: 0;
+        list-style: none;
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          font-size: 1rem;
+          strong {
+            i {
+              font-size: 1.125rem;
+              font-weight: 400;
+              margin-inline-end: 3px;
+            }
+          }
+          &:not(:last-child) {
+            padding-bottom: 12px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid var(--gray2);
+          }
+        }
+      }
+    }
+  }
+}
+
+.courses-related{
+  background-color: var(--bg-gray);
+  padding: 3.75rem 0;
+}

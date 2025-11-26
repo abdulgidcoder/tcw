@@ -18,3 +18,23 @@
     margin-bottom: 0;
   }
 }
+
+.about-section {
+  padding: 3.75rem 0;
+  .subtitle{
+    color: var(--primary);
+    font-weight: 600;
+  }
+    p {
+font-size: 1.0625rem;
+font-weight: 500;
+color: var(--gray);
+  }
+  img {
+    border-radius: var(--border-radius);
+    width: 100%;
+       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: var(--border-radius);
+
+  }
+}

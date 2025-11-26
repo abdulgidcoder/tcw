@@ -23,6 +23,7 @@ export default defineConfig({
       input: {
         index: path.resolve(__dirname, "src/index.html"),
         courses: path.resolve(__dirname, "src/courses.html"),
+        singlecourses: path.resolve(__dirname, "src/single-course.html"),
         faq: path.resolve(__dirname, "src/faq.html"),
         error: path.resolve(__dirname, "src/404.html"),
         login: path.resolve(__dirname, "src/login.html"),
